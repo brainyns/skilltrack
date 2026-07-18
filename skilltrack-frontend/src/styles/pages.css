@@ -1,0 +1,24 @@
+/* Responsive para páginas internas */
+
+/* Dashboard: grids a columna en móvil */
+@media (max-width: 700px) {
+  .dash-top-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .dash-benefits-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .oferta-row {
+    flex-direction: column !important;
+  }
+  .oferta-row > button {
+    align-self: stretch;
+  }
+}
+
+/* Perfil: grid de datos a columna */
+@media (max-width: 500px) {
+  .perfil-datos-grid {
+    grid-template-columns: 1fr !important;
+  }
+}

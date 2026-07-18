@@ -33,6 +33,7 @@ export default function DashboardPage() {
       <h1 style={{ fontSize: "26px", marginBottom: "28px" }}>{ofertaTitulo}</h1>
 
       <div
+        className="dash-top-grid"
         style={{
           display: "grid",
           gridTemplateColumns: "auto 1fr",
@@ -51,7 +52,7 @@ export default function DashboardPage() {
         </Card>
       </div>
 
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "20px", marginBottom: "20px" }}>
+      <div className="dash-benefits-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "20px", marginBottom: "20px" }}>
         <Card>
           <h2 style={{ fontSize: "15px", marginBottom: "14px", color: "var(--accent-ready)" }}>
             Fortalezas ({fortalezas.length})

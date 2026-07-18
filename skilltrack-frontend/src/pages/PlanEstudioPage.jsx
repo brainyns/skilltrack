@@ -11,17 +11,12 @@ export default function PlanEstudioPage() {
   const [actualizandoId, setActualizandoId] = useState(null);
 
   useEffect(() => {
-    cargarComparacion();
-  }, [comparacionId]);
-
-  function cargarComparacion() {
-    setCargando(true);
     comparacionService
       .obtenerPorId(comparacionId)
       .then(setComparacion)
       .catch((err) => setError(err.message))
       .finally(() => setCargando(false));
-  }
+  }, [comparacionId]);
 
   async function alternarCompletado(item) {
     setActualizandoId(item.id);

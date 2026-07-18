@@ -64,6 +64,7 @@ export default function OfertasPage() {
         {ofertas.map((oferta) => (
           <Card key={oferta.id}>
             <div
+              className="oferta-row"
               style={{
                 display: "flex",
                 justifyContent: "space-between",

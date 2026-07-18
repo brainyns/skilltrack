@@ -4,7 +4,7 @@ import { usuarioService } from "../api/usuarioService";
 import { tecnologiaService } from "../api/tecnologiaService";
 import Card from "../components/Card.jsx";
 import Button from "../components/Button.jsx";
-import StarRating from "../components/StarRating.jsx";
+import StarRating from "../components/Starrating.jsx";
 
 const ETIQUETAS_CATEGORIA = {
   BACKEND: "Backend",

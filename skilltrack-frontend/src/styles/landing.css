@@ -396,3 +396,46 @@
   color: var(--text-muted);
   font-size: 13px;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 48px 20px 64px;
+  }
+  .hero-inner {
+    gap: 32px;
+  }
+  .hero-title {
+    font-size: 28px;
+  }
+  .hero-subtitle {
+    font-size: 15px;
+  }
+  .bento-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    height: auto;
+  }
+  .bento-skills,
+  .bento-gauge,
+  .bento-analyzing,
+  .bento-progress {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .section {
+    padding: 48px 20px;
+  }
+  .section-heading h2 {
+    font-size: 24px;
+  }
+  .steps-list::before {
+    left: 23px;
+  }
+  .cta-card {
+    padding: 40px 20px;
+  }
+  .cta-card h2 {
+    font-size: 22px;
+  }
+}
