@@ -1,0 +1,15 @@
+# Java
+target/
+
+# IntelliJ
+.idea/
+*.iml
+
+# React
+node_modules/
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
